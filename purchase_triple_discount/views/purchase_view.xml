@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="purchase.purchase_order_form" />
         <field name="arch" type="xml">
             <xpath
-                expr="//field[@name='order_line']//tree//field[@name='discount']"
+                expr="//field[@name='order_line']//list//field[@name='discount']"
                 position="attributes"
             >
                 <attribute name="optional">hide</attribute>
@@ -14,7 +14,7 @@
                 <attribute name="string">Total discount</attribute>
             </xpath>
             <xpath
-                expr="//field[@name='order_line']//tree//field[@name='discount']"
+                expr="//field[@name='order_line']//list//field[@name='discount']"
                 position="after"
             >
                 <field name="discount1" optional="show" readonly="qty_invoiced != 0" />
@@ -22,7 +22,7 @@
                 <field name="discount3" optional="show" readonly="qty_invoiced != 0" />
             </xpath>
             <xpath
-                expr="//field[@name='order_line']//tree//field[@name='discount']"
+                expr="//field[@name='order_line']//list//field[@name='discount']"
                 position="attributes"
             >
                 <attribute name="string">Total discount</attribute>

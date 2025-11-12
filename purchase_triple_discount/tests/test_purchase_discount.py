@@ -2,11 +2,10 @@
 # Copyright 2019 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo.tests import common
-from odoo.tests.common import Form
+from odoo.tests import Form, TransactionCase
 
 
-class TestPurchaseOrder(common.TransactionCase):
+class TestPurchaseOrder(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
